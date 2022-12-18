@@ -23,13 +23,16 @@ public class RadioIssues {
             char compChar = 9;
 
             while(markerEndIndex <= inputBuffer.length()){
+                System.out.println("Top of loop");
                 //pull the 4 characters that are the possible start marker
                 for(int i = 0; i < 4; i++){
                     possibleMarker = possibleMarker + inputBuffer.charAt(markerStartIndex+i);
                 }
+                System.out.println("possibleMarker: " + possibleMarker);
                 //see if there are duplicates in possibleMarker
                 for(int mc = 0; mc < 4; mc++) {
                     compChar = possibleMarker.charAt(mc);
+                    System.out.println("compChar: " + compChar);
                     //compare to possibleMarker string minus the compChar (replace with 0)
                     if(mc == 0){
                         possibleMarkerComp = "0" + possibleMarker.substring(mc+1);
