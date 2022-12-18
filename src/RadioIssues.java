@@ -49,7 +49,7 @@ public class RadioIssues {
                     } else {      //duplicate not found ==> this is the marker
                         System.out.println("First marker after character: " + markerEndIndex);
                     }
-                    
+
                      */
                 }
             }
